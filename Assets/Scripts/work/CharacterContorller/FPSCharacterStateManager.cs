@@ -37,6 +37,22 @@ namespace CharacterController.FPS
             if (cameraReference != null)
             {
                 MoveStateMachine.ExternalReference = cameraReference;
+
+                var fpsCamera = cameraReference.GetComponent<FPSFirstPersonCamera>();
+                if (fpsCamera == null)
+                {
+                    fpsCamera = cameraReference.gameObject.AddComponent<FPSFirstPersonCamera>();
+                }
+
+                if (fpsCamera.CharacterActor == null)
+                {
+                    fpsCamera.CharacterActor = characterActor;
+                }
+
+                if (fpsCamera.CharacterBrain == null)
+                {
+                    fpsCamera.CharacterBrain = characterBrain;
+                }
             }
             else
             {

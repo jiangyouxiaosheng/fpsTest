@@ -62,6 +62,12 @@ namespace CharacterController
         public CharacterActions CharacterActions => characterActions;
         public int PendingInputCount => inputCommandQueue?.Count ?? 0;
 
+        /// <summary>
+        /// 每帧更新的视角输入（鼠标 delta / 右摇杆），供第一人称相机等系统使用。
+        /// 不经过 FixedUpdate 队列，避免鼠标 delta 在物理帧中重复或丢失。
+        /// </summary>
+        public Vector2 LookInput { get; private set; }
+
         public void UpdateBrainValues(float dt)
         {
             AdvanceActions(dt);
@@ -224,6 +230,13 @@ namespace CharacterController
             ResetLocalActions();
         }
 
+        protected virtual void Update()
+        {
+            LookInput = inputHandlerSettings.InputHandler != null
+                ? inputHandlerSettings.InputHandler.GetVector2("Look")
+                : Vector2.zero;
+        }
+
         protected virtual void FixedUpdate()
         {
             AdvanceActions(Time.fixedDeltaTime);
@@ -341,13 +354,17 @@ namespace CharacterController
 
         void ResolveExternalReferences()
         {
-            // 
+            if (inputHandlerSettings.InputHandler == null)
+            {
+                inputHandlerSettings.InputHandler = GetComponent<InputHandler>();
+            }
         }
 
         void ResetLocalActions()
         {
             characterActions.Reset();
             sampledCharacterActions.Reset();
+            LookInput = Vector2.zero;
             lastQueuedMovement = Vector2.zero;
             inputCommandQueue?.Clear();
         }
