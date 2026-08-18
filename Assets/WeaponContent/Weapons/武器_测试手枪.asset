@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e08a58eee1449b4bb6f1296ea2baa54, type: 3}
+  m_Name: "\u6B66\u5668_\u6D4B\u8BD5\u624B\u67AA"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController.FPS.Weapon.WeaponData
+  weaponName: "\u6D4B\u8BD5\u624B\u67AA"
+  ammoType: {fileID: 11400000, guid: da56d8d71fa1a464188c948e493fa4f2, type: 2}
+  damage: 25
+  headshotMultiplier: 1.5
+  supportedModes: 02000000020000000100000000000000
+  defaultMode: 0
+  fireRate: 1000
+  burstCount: 3
+  burstInterval: 0.08
+  magazineSize: 10000
+  tacticalReloadTime: 1.5
+  emptyReloadTime: 2
+  hipSpread: 3
+  adsSpread: 0.2
+  spreadRecoverySpeed: 20
+  adsTime: 0.25
+  recoilPattern: {fileID: 11400000, guid: a880915f091efe54082722ae9cb62015, type: 2}
+  ballistic: {fileID: 11400000, guid: e3a9df418905447898c5a88732cb8044, type: 2}
+  attachmentSlots:
+  - type: 0
+    maxRarity: 3
+  - type: 1
+    maxRarity: 3
+  - type: 2
+    maxRarity: 3
+  - type: 3
+    maxRarity: 3

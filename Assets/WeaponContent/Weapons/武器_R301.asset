@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e08a58eee1449b4bb6f1296ea2baa54, type: 3}
+  m_Name: "\u6B66\u5668_R301"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController.FPS.Weapon.WeaponData
+  weaponName: "R-301 \u5361\u5BBE\u67AA"
+  ammoType: {fileID: 11400000, guid: 66463e4d0c89d8d43b64658b9bedf684, type: 2}
+  damage: 14
+  headshotMultiplier: 1.5
+  supportedModes: 020000000000000002000000
+  defaultMode: 2
+  fireRate: 600
+  burstCount: 3
+  burstInterval: 0.08
+  magazineSize: 18
+  tacticalReloadTime: 2
+  emptyReloadTime: 2.6
+  hipSpread: 2.5
+  adsSpread: 0.2
+  spreadRecoverySpeed: 20
+  adsTime: 0.25
+  recoilPattern: {fileID: 11400000, guid: 142c89efad1e4d541bd557069d8f3497, type: 2}
+  ballistic: {fileID: 11400000, guid: d4d8a462d81f89340b17fc87722755eb, type: 2}
+  attachmentSlots:
+  - type: 0
+    maxRarity: 3
+  - type: 1
+    maxRarity: 3
+  - type: 2
+    maxRarity: 3
+  - type: 3
+    maxRarity: 3

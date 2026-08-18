@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e08a58eee1449b4bb6f1296ea2baa54, type: 3}
+  m_Name: "\u6B66\u5668_Wingman"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController.FPS.Weapon.WeaponData
+  weaponName: "Wingman \u5DE6\u8F6E"
+  ammoType: {fileID: 11400000, guid: da56d8d71fa1a464188c948e493fa4f2, type: 2}
+  damage: 45
+  headshotMultiplier: 1.5
+  supportedModes: 0200000000000000
+  defaultMode: 0
+  fireRate: 150
+  burstCount: 3
+  burstInterval: 0.08
+  magazineSize: 6
+  tacticalReloadTime: 2
+  emptyReloadTime: 2.6
+  hipSpread: 3
+  adsSpread: 0.2
+  spreadRecoverySpeed: 20
+  adsTime: 0.25
+  recoilPattern: {fileID: 11400000, guid: a880915f091efe54082722ae9cb62015, type: 2}
+  ballistic: {fileID: 11400000, guid: 171d9435a2ddba041be43968fd2eda06, type: 2}
+  attachmentSlots:
+  - type: 0
+    maxRarity: 3
+  - type: 1
+    maxRarity: 3
+  - type: 2
+    maxRarity: 3
+  - type: 3
+    maxRarity: 3

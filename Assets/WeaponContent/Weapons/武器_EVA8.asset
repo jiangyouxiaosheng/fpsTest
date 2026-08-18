@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e08a58eee1449b4bb6f1296ea2baa54, type: 3}
+  m_Name: "\u6B66\u5668_EVA8"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController.FPS.Weapon.WeaponData
+  weaponName: "EVA-8 \u81EA\u52A8\u9730\u5F39\u67AA"
+  ammoType: {fileID: 11400000, guid: 065e2d8f09c63534fb27202278537a22, type: 2}
+  damage: 9
+  headshotMultiplier: 1.5
+  supportedModes: 0200000000000000
+  defaultMode: 0
+  fireRate: 210
+  burstCount: 3
+  burstInterval: 0.08
+  magazineSize: 8
+  tacticalReloadTime: 2
+  emptyReloadTime: 2.6
+  hipSpread: 4
+  adsSpread: 0.2
+  spreadRecoverySpeed: 20
+  adsTime: 0.25
+  recoilPattern: {fileID: 11400000, guid: 844d18ca55074314ebf5720c8304baab, type: 2}
+  ballistic: {fileID: 11400000, guid: c520d30ad47a1de44b604013a8abc631, type: 2}
+  attachmentSlots:
+  - type: 0
+    maxRarity: 3
+  - type: 4
+    maxRarity: 3

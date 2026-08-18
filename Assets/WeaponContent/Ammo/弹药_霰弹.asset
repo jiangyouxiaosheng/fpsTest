@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6688cfb24054af644b7985c789a5a637, type: 3}
+  m_Name: "\u5F39\u836F_\u9730\u5F39"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController.FPS.Weapon.AmmoData
+  type: 4
+  displayName: "\u9730\u5F39\u5F39\u836F"
+  icon: {fileID: 0}
+  maxStack: 48
+  perPickup: 16
+  isSpecial: 0
