@@ -24,6 +24,13 @@ namespace CharacterController.FPS.Movement
                 return;
             }
 
+            if (TryGetInput(CharacterInputType.Crouch, out var crouchCommand) &&
+                crouchCommand.BoolValue)
+            {
+                parentMachine.ChangeState(FPSMoveState.CrouchMove);
+                return;
+            }
+
             if (!CanSprint())
             {
                 parentMachine.ChangeState(FPSMoveState.NormalMove);

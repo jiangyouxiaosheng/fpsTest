@@ -39,7 +39,11 @@ namespace CharacterController.FPS.Movement
                 return;
             }
 
-            if (CanSprint())
+            if (characterActions.crouch.value)
+            {
+                parentMachine.ChangeState(FPSMoveState.CrouchMove);
+            }
+            else if (CanSprint())
             {
                 parentMachine.ChangeState(FPSMoveState.SprintMove);
             }

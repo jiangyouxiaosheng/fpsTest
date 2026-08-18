@@ -10,12 +10,14 @@ namespace CharacterController.FPS
     {
         NormalMove,
         SprintMove,
+        CrouchMove,
         Jump
     }
 
     public enum FPSLogicState
     {
         Empty,
-        Fire
+        Fire,
+        Interact
     }
 }

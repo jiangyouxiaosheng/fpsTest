@@ -8,6 +8,13 @@ namespace CharacterController.FPS.Logic
         {
             base.Update();
 
+            if (TryGetInput(CharacterInputType.Interact, out var interactCommand) &&
+                interactCommand.BoolValue)
+            {
+                parentMachine.ChangeState(FPSLogicState.Interact);
+                return;
+            }
+
             if (TryGetInput(CharacterInputType.Attack, out var attackCommand) &&
                 attackCommand.BoolValue)
             {

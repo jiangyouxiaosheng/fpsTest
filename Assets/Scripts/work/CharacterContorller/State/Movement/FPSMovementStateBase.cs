@@ -9,6 +9,7 @@ namespace CharacterController.FPS.Movement
     {
         protected PlanarMovementParameters planarMovementParameters = new();
         protected VerticalMovementParameters verticalMovementParameters = new();
+        protected CrouchParameters crouchParameters = new();
 
         protected CharacterActor characterActor { get; private set; }
         protected CharacterBrain characterBrain { get; private set; }

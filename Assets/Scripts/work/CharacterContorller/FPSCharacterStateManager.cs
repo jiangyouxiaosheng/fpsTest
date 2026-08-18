@@ -85,18 +85,22 @@ namespace CharacterController.FPS
         {
             var normalMove = new FPSNormalMoveState();
             var sprintMove = new FPSSprintMoveState();
+            var crouchMove = new FPSCrouchMoveState();
             var jump = new FPSJumpState();
 
             MoveStateMachine.AddState(normalMove);
             MoveStateMachine.AddState(sprintMove);
+            MoveStateMachine.AddState(crouchMove);
             MoveStateMachine.AddState(jump);
             MoveStateMachine.SetDefaultState(FPSMoveState.NormalMove);
 
             var empty = new FPSEmptyLogicState();
             var fire = new FPSFireState();
+            var interact = new FPSInteractState();
 
             LogicStateMachine.AddState(empty);
             LogicStateMachine.AddState(fire);
+            LogicStateMachine.AddState(interact);
             LogicStateMachine.SetDefaultState(FPSLogicState.Empty);
         }
     }
